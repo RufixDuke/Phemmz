@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Card from './Card/Card';
+import classes from './Card/Card.module.css'
 
 const Cards = () => {
     const [data, setData] = useState([])
@@ -21,12 +22,12 @@ const Cards = () => {
     }, [])
 
     return (
-        <>
-            {data.map((datum) =>
-                <div key={datum.id}>
-                    <Card datum={datum} />
-                </div>
-            )}
+        <>{console.log(data)}
+            <div className={classes.cards}>
+                {data.map((datum) =>
+                    <Card key={datum.id} datum={datum} />
+                )}
+            </div>
         </>
     )
 }
