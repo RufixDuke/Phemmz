@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Card from './Card/Card';
-import classes from './Card/Card.module.css'
+import classes from './Card/Card.module.scss'
 
 const Cards = () => {
     const [data, setData] = useState([])

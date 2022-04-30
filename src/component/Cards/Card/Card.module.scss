@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    background-color: rgb(0, 0, 8);
+    color: white;
+    font-family: 'Ubuntu',
+        'san-serif';
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media screen and (min-width:540px) {
+        flex-direction: row;
+        
+    }
+
+    /*
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto;
+    grid-column-start: 1;
+    grid-column-end: 3; */
+}
+.card {
+    @extend .flex;
+    flex-direction: column;
+    max-width: 350px;
+    border-radius: 5px;
+    
+    @media screen and (min-width:540px) {
+        flex-direction: row;
+        
+    }
+    
+    img {
+        display: block;
+        max-width: 250px;
+        margin: 10px 5px;
+    }
+
+}
+
+
+
+.container {
+    display: flex;
+    height: 50%;
+    background-color: rgb(5, 5, 31);
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h3 {
+    font-size: 14px;
+}
+
+.flex p {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.image {
+    object-fit: cover;
+    /* margin: 0 auto; */
+    height: 70%;
+    width: 100%;
+}
+
+.ps {
+    font-size: 10px;
+}
+
+.ps h3 {
+    font-size: 12px;
+}
