@@ -23,11 +23,11 @@ const Cards = () => {
 
     return (
         <>{console.log(data)}
-            <div className={classes.cards}>
+            
                 {data.map((datum) =>
                     <Card key={datum.id} datum={datum} />
                 )}
-            </div>
+            
         </>
     )
 }

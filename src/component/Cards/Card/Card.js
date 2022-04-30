@@ -2,8 +2,7 @@ import React from 'react'
 import classes from './Card.module.scss'
 
 const Card = ({ datum }) => {
-    return (
-        <>
+    return (        
             <div className={classes.card}>
                 <img src={datum.image} alt="" />
                 <div>
@@ -21,7 +20,7 @@ const Card = ({ datum }) => {
                     </div>
                 </div>
             </div>
-        </>
+        
     )
 }
 
