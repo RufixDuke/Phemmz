@@ -10,6 +10,8 @@
 .card {
     @extend .flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     max-width: 250px;
     border-radius: 5px;
     background-color: #3c3e43;
@@ -18,25 +20,22 @@
     padding: 10px;
     
     @media screen and (min-width:540px) {
-        max-width: 350px;
+        max-width: 400px;
         padding: 0;
         flex-direction: row;
     }
     @media screen and (min-width:780px) {
-        
-        padding: 0;
-        margin:  10px 2%;
-        flex-direction: row;
+        margin:  10px 2%;        
     }
-*{
-    display: block;
-    text-align: left;
-}
-
+    
     >div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media screen and (min-width:540px) {
+            margin-left: 10px;
+        }
+
         div{
             display: flex;
             flex-direction: column;
