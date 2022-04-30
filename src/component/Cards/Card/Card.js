@@ -7,8 +7,8 @@ const Card = ({ datum }) => {
             <div>
                 <div className={classes.grid}>
                     <div className={classes.container}>
-                        <div>
-                            <img className={classes.image} src={datum.image} alt={datum.name} />
+                        <div className={classes.image}>
+                            <img src={datum.image} alt={datum.name} />
                         </div>
                         <div>
                             <div>
