@@ -13,50 +13,53 @@
     justify-content: flex-start;
     align-items: center;
     max-width: 250px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #3c3e43;
     width: 100%;
     margin: 0 0 20px;
     padding: 10px;
-    
+
     @media screen and (min-width:540px) {
         max-width: 400px;
         padding: 0;
         flex-direction: row;
     }
+
     @media screen and (min-width:780px) {
-        margin:  10px 2%;        
+        margin: 10px 2%;
     }
-    
+
     >div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         @media screen and (min-width:540px) {
             margin-left: 10px;
         }
 
-        div{
+        >div {
             display: flex;
             flex-direction: column;
-        }
+            margin-top: 10px;
 
-        h2 {
-            font-size: 20px;
-        }
+            h2 {
+                font-size: 20px;
+            }
 
-        span {
-            font-size: 14px;
-        }
+            span {
+                font-size: 12px;
+            }
 
-        p {
-            font-size: 12px;
+            p {
+                font-size: 16px;
+            }
         }
     }
 
     img {
         display: block;
-        max-width: 180px;        
+        max-width: 180px;
         object-fit: cover;
     }
 
